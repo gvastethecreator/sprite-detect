@@ -28,13 +28,13 @@ These rules come from the `spritesheet-expert` skill (deterministic item atlas):
 
 ## Use
 
-Consumers link a sibling checkout:
+Consumers pin a tag from GitHub:
 
 ```json
-"dependencies": { "sprite-detect": "link:../sprite-detect" }
+"dependencies": { "sprite-detect": "github:gvastethecreator/sprite-detect#v0.1.0" }
 ```
 
-The package ships TypeScript source (`exports` points to `src/index.ts`). Vite, Vitest, Bun, and Node 24 or newer load it directly.
+The package ships TypeScript source (`exports` points to `src/index.ts`). Vite, Vitest, and Bun load it directly. Plain Node does not strip types inside `node_modules`.
 
 ```sh
 pnpm install
