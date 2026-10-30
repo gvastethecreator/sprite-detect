@@ -1,0 +1,28 @@
+{
+  "name": "sprite-detect",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Pure sprite-sheet detection: grid bands, manual grids, and alpha-hysteresis sprite cuts with stray classification. No DOM; runs in workers and Node.",
+  "license": "MIT",
+  "author": "gvastethecreator",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src",
+    "!src/**/*.test.ts"
+  ],
+  "scripts": {
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "devDependencies": {
+    "typescript": "^7.0.2",
+    "vitest": "5.0.0"
+  },
+  "engines": {
+    "node": ">=24.15.0"
+  },
+  "packageManager": "pnpm@11.21.0"
+}
